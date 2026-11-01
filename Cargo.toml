@@ -1,0 +1,14 @@
+[package]
+name = "craft-dbstrip"
+description = "Removes personal data (forms, shop, customers, sessions) from a mysqldump of a Craft CMS site"
+version = "0.1.0"
+authors = ["Sören Meier <info@soerenmeier.ch>"]
+repository = "https://github.com/chuchi-dev/craft-dbstrip"
+edition = "2024"
+license = "MIT OR Apache-2.0"
+keywords = ["craftcms", "mysqldump", "gdpr", "anonymize"]
+categories = ["database"]
+
+[dependencies]
+flate2 = "1.1"
+zip = { version = "9.0", default-features = false, features = ["deflate"] }
